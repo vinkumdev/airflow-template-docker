@@ -1,0 +1,46 @@
+# Airflow logs and database files
+logs/
+unity_db/
+sqlite.db
+data/*
+!data/.gitkeep
+
+# Airflow DAGs
+*.pyc
+__pycache__/
+*.pyo
+*.pyd
+
+# Python specific
+*.egg
+*.egg-info
+dist/
+build/
+.eggs/
+
+# Virtualenv directory
+.venv/
+venv/
+env/
+ENV/
+
+.env
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# PyCharm/VSCode or IDE files
+.idea/
+.vscode/
+
+# Docker and Kubernetes specific files
+docker-compose.override.yml
+*.log
+*.bak
+
+# Airflow DAG files
+# Ignore any DAGs that aren't part of version control, if needed
+/airflow-home/dags/*.pyc
+/airflow-home/dags/__pycache__/
+
+.DS_Store
